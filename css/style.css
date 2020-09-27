@@ -521,17 +521,17 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .slider {
-    width: 100%;
-  }
-  .slider__slider {
+  .hotel__slider {
     margin-bottom: 30px;
   }
-  .slider__right {
+  .hotel-right {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .slider {
+    width: 100%;
   }
   .booking {
     width: 340px;
