@@ -27,5 +27,12 @@ var reviewsSwiper = new Swiper(".reviews-slider", {
     enabled: true,
     onlyInViewport: false,
   },
+});
 
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("Кликни по кнопке меню");
+  document
+    .querySelector(".navbar-bottom")
+    .classList.toggle(".navbar-bottom--visible");
 });
