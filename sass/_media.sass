@@ -1,5 +1,5 @@
 @media (max-width: 1200px)
-  .container 
+  .container
     max-width: 1100px
     padding-right: 20px
     padding-left: 20px
@@ -11,13 +11,25 @@
         width: 100%
         height: 100%
         object-fit: cover
-  .card 
+  .card
     width: 230px
     height: 230px
   .footer
     &__input
-      flex-basis: 100% 
-  
+      flex-basis: 100%
+    &__payment
+      display: flex
+      grid-column: 6 / 1
+      justify-content: space-between
+    &-ul
+      display: flex
+      justify-content: space-between
+      width: 100%
+      max-width: 283px
+      padding: 0
+      &__item
+        display: flex
+
 @media (max-width: 992px)
   .hotel-slider
     width: 100%
@@ -27,7 +39,7 @@
     max-width: 700px
   .logo
     width: 132px
-  .navbar 
+  .navbar
     &-top
       padding-top: 30px
       padding-bottom: 30px
@@ -44,7 +56,7 @@
       width: 100%
       max-width: 340px
   .hotel
-    &-grid 
+    &-grid
       flex-direction: column
     &__slider
       margin-bottom: 30px
@@ -54,7 +66,7 @@
       margin: 0
     &-slider
       width: 100%
-  .booking 
+  .booking
     width: 340px
   .maps
     width: 340px
@@ -69,7 +81,7 @@
       flex-wrap: wrap
     &__card
       margin-bottom: 20px
-  .card 
+  .card
     width: 315px
     height: 250px
   .footer
@@ -92,7 +104,7 @@
     &__legal
       grid-column: span 2
     &__additional
-      grid-column: span 2 
+      grid-column: span 2
     &__contact
       &-details
         grid-column: span 5
@@ -100,7 +112,14 @@
       &-form
         grid-column: span 5
         grid-row: 4
-
+    &__payment
+      display: grid
+      grid-template-columns: repeat(2,3fr)
+      align-items: center
+      &-ul
+        width: 100%
+        display: flex
+        justify-content: space-between
 /////////////////////////@media (max-width: 768px)///////////////////////
 @media (max-width: 768px)
   .container
@@ -133,7 +152,7 @@
       padding-top: 30px
       &--visible
         display: block
-        
+
     &-menu
       flex-direction: column
       &__item
@@ -186,9 +205,9 @@
         margin-left: 0
   .hotel
     &-right
-      flex-direction: column 
+      flex-direction: column
       min-height: 190px
-    &-slider 
+    &-slider
       height: 350px
   .booking
     width: 100%
@@ -197,7 +216,7 @@
       display: flex
       justify-content: space-between
       margin-bottom: 17px
-  .maps 
+  .maps
     width: 100%
     margin: 0
   .newsletter
@@ -231,13 +250,23 @@
   .activities
     padding-top: 40px
     padding-bottom: 60px
-  .card 
+  .card
     width: 49%
     height: 230px
   .footer
     margin-top: 70px
     &__input
       flex-basis: 100%
+    &__payment
+      display: grid
+      grid-template-columns: repeat(1,3fr)
+      align-items: center
+      &-ul
+        width: 100%
+        display: flex
+        justify-content: space-between
+    &__img
+      margin-left: 0px
 /////////////////////////@media (max-width: 576px)///////////////////////
 @media (max-width: 576px)
   .logo
@@ -293,7 +322,7 @@
 @media (min-width: 320px) and (max-width: 480px)
   .container
     margin: 0
-  .navbar 
+  .navbar
     &-top
       padding-top: 28px
       padding-bottom: 28px
@@ -324,7 +353,7 @@
       padding-top: 20px
       &--visible
         display: block
-        
+
     &-menu
       flex-direction: column
       &__item
@@ -345,7 +374,7 @@
       width: 100%
     &-slider
       &__image
-        min-height: 100% 
+        min-height: 100%
   .booking
     width: 100%
     margin-bottom: 20px
@@ -388,8 +417,3 @@
         transform: translateX(-0%)
   .card
     width: 100%
-    
-
-
-
-  
